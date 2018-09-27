@@ -13,7 +13,8 @@ RUN npm install -g yarn
 WORKDIR /var/app
 RUN mkdir -p /var/app
 ADD package.json yarn.lock /var/app/
-RUN yarn install --non-interactive --frozen-lockfile
+#RUN yarn install --non-interactive --frozen-lockfile
+RUN yarn install --non-interactive 
 
 COPY . /var/app
 
@@ -24,9 +25,11 @@ COPY . /var/app
 #  ./node_modules/.bin/eslint . && \
 #  npm run build
 
-RUN mkdir tmp && \
-    yarn test && yarn build
+#RUN mkdir tmp && \
+#    yarn test && yarn build
 
+RUN mkdir tmp && yarn build
+    
 ENV PORT 8080
 ENV NODE_ENV production
 

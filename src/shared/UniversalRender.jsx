@@ -13,8 +13,6 @@ import {
     browserHistory,
 } from 'react-router';
 import { Provider } from 'react-redux';
-import { api } from '@steemit/steem-js';
-
 import RootRoute from 'app/RootRoute';
 import * as appActions from 'app/redux/AppReducer';
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -30,7 +28,8 @@ import Translator from 'app/Translator';
 import { routeRegex } from 'app/ResolveRoute';
 import { contentStats } from 'app/utils/StateFunctions';
 import ScrollBehavior from 'scroll-behavior';
-import { getStateAsync } from 'app/utils/steemApi';
+
+import { api } from '@steemit/steem-js';
 
 let get_state_perf,
     get_content_perf = false;
@@ -473,7 +472,7 @@ async function apiGetState(url) {
         offchain = get_state_perf;
     }
 
-    offchain = await getStateAsync(url);
+    offchain = await api.getStateAsync(url);
 
     return offchain;
 }

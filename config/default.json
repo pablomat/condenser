@@ -1,18 +1,18 @@
 {
-  "database_url": "mysql://root:password@127.0.0.1/steemit_dev",
+  "database_url": "mysql://root:password@172.17.0.1/steemit_dev",
   "disable_signups": false,
   "facebook_app_id": false,
   "google_analytics_id": false,
   "helmet": {
     "directives": {
-      "childSrc": "'self' www.youtube.com staticxx.facebook.com w.soundcloud.com player.vimeo.com",
-      "connectSrc": "'self' steemit.com https://api.steemit.com api.blocktrades.us",
-      "defaultSrc": "'self' www.youtube.com staticxx.facebook.com player.vimeo.com",
-      "fontSrc": "data: fonts.gstatic.com",
+      "childSrc": "'self' www.youtube.com staticxx.facebook.com w.soundcloud.com player.vimeo.com x01.xyz",
+      "connectSrc": "'self' x01.xyz eftg.blkcc.xyz https://cdn.blkcc.xyz/ https://api.blkcc.xyz/",
+      "defaultSrc": "'self' x01.xyz www.youtube.com staticxx.facebook.com player.vimeo.com",
+      "fontSrc": "data: fonts.gstatic.com x01.xyz",
       "frameAncestors": "'none'",
-      "imgSrc": "* data:",
-      "objectSrc": "'none'",
-      "pluginTypes": "application/pdf",
+      "imgSrc": "* data: x01.xyz",
+      "objectSrc": "* data: x01.xyz",
+      "pluginTypes": "application/pdf image/svg+xml",
       "scriptSrc": "'self' www.google-analytics.com connect.facebook.net",
       "styleSrc": "'self' 'unsafe-inline' fonts.googleapis.com",
       "reportUri": "/api/v1/csp_violation"
@@ -20,7 +20,7 @@
     "reportOnly": false,
     "setAllHeaders": true
   },
-  "img_proxy_prefix": "https://steemitdevimages.com/",
+  "img_proxy_prefix": "https://cdn.blkcc.xyz/",
   "ipfs_prefix": false,
   "mixpanel": false,
   "newrelic": false,
@@ -34,7 +34,7 @@
   },
   "registrar": {
     "account": "-",
-    "fee": "0.5 STEEM",
+    "fee": "0.1 EFTG",
     "delegation": "150250.000000 VESTS",
     "signing_key": "5J..."
   },
@@ -50,10 +50,10 @@
       "waiting_list_invite": false
     }
   },
-  "server_session_secret": "exiKdyF+IwRIXJDmtGIl4vWUz4i3eVSISpfZoeYc0s4=",
-  "session_cookie_key": "stm-dev",
-  "session_key": "steemses",
-  "site_domain": "steemitdev.com",
+  "server_session_secret": "iaCEEluZwJ1brf3MbGWpF2c8ZgYlnSHXtfCtBe7TK2M=",
+  "session_cookie_key": "eftg.session",
+  "session_key": "eftg",
+  "site_domain": "eftg.blkcc.xyz",
   "tarantool": {
     "host": "localhost",
     "password": "",
@@ -68,12 +68,12 @@
     "account_sid": false,
     "auth_token": false
   },
-  "upload_image": false,
-  "steemd_connection_client": "https://api.steemit.com",
-  "steemd_connection_server": "https://api.steemit.com",
+  "upload_image": "https://cdn.blkcc.xyz",
+  "steemd_connection_client": "https://api.blkcc.xyz/",
+  "steemd_connection_server": "https://api.blkcc.xyz/",
   "steemd_use_appbase": false,
-  "chain_id": "0000000000000000000000000000000000000000000000000000000000000000",
-  "address_prefix": "STM",
+  "chain_id": "1c15984beb16945c01cb9bc3d654b0417c650461dfe535018fe03a4fc5a36864",
+  "address_prefix": "EUR",
   "conveyor_posting_wif": false,
   "conveyor_username": false
 }

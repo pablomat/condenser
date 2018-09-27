@@ -148,8 +148,7 @@ export default function reducer(state = defaultState, action) {
                     // Sane error key for the bandwidth error.
                     if (
                         errorKey.includes('bandwidth') ||
-                        errorStr.includes('bandwidth') ||
-                        errorStr.includes('RC') // Error key for HF-20 insufficient RC error, #3001.
+                        errorStr.includes('bandwidth')
                     ) {
                         state = state.setIn(['errors', 'bandwidthError'], true);
                     }

@@ -6,7 +6,6 @@ import TimeAgoWrapper from 'app/components/elements/TimeAgoWrapper';
 import Memo from 'app/components/elements/Memo';
 import { numberWithCommas, vestsToSp } from 'app/utils/StateFunctions';
 import tt from 'counterpart';
-import GDPRUserList from 'app/utils/GDPRUserList';
 
 class TransferHistoryRow extends React.Component {
     render() {
@@ -308,12 +307,9 @@ class TransferHistoryRow extends React.Component {
     }
 }
 
-const otherAccountLink = username =>
-    GDPRUserList.includes(username) ? (
-        <span>{username}</span>
-    ) : (
-        <Link to={`/@${username}`}>{username}</Link>
-    );
+const otherAccountLink = username => (
+    <Link to={`/@${username}`}>{username}</Link>
+);
 
 export default connect(
     // mapStateToProps
