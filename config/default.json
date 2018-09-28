@@ -6,7 +6,7 @@
   "helmet": {
     "directives": {
       "childSrc": "'self' www.youtube.com staticxx.facebook.com w.soundcloud.com player.vimeo.com x01.xyz",
-      "connectSrc": "'self' x01.xyz eftg.blkcc.xyz https://cdn.blkcc.xyz/ https://api.blkcc.xyz/",
+      "connectSrc": "'self' x01.xyz eftg.dev.blkcc.xyz https://cdn.dev.blkcc.xyz/ https://api.blkcc.xyz/",
       "defaultSrc": "'self' x01.xyz www.youtube.com staticxx.facebook.com player.vimeo.com",
       "fontSrc": "data: fonts.gstatic.com x01.xyz",
       "frameAncestors": "'none'",
@@ -20,7 +20,7 @@
     "reportOnly": false,
     "setAllHeaders": true
   },
-  "img_proxy_prefix": "https://cdn.blkcc.xyz/",
+  "img_proxy_prefix": "https://cdn.dev.blkcc.xyz/",
   "ipfs_prefix": false,
   "mixpanel": false,
   "newrelic": false,
@@ -53,7 +53,7 @@
   "server_session_secret": "iaCEEluZwJ1brf3MbGWpF2c8ZgYlnSHXtfCtBe7TK2M=",
   "session_cookie_key": "eftg.session",
   "session_key": "eftg",
-  "site_domain": "eftg.blkcc.xyz",
+  "site_domain": "eftg.dev.blkcc.xyz",
   "tarantool": {
     "host": "localhost",
     "password": "",
@@ -68,7 +68,7 @@
     "account_sid": false,
     "auth_token": false
   },
-  "upload_image": "https://cdn.blkcc.xyz",
+  "upload_image": "https://cdn.dev.blkcc.xyz",
   "steemd_connection_client": "https://api.blkcc.xyz/",
   "steemd_connection_server": "https://api.blkcc.xyz/",
   "steemd_use_appbase": false,
