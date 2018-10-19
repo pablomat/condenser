@@ -17,10 +17,7 @@ export default class WelcomePanel extends React.Component {
                     <CloseButton onClick={this.setShowBannerFalse} />
                     <div className="row">
                         <div className="text-center welcomeImage small-12 show-for-small-only">
-                            <img
-                                className="heroImage"
-                                src={require('app/assets/images/welcome-hero.png')}
-                            />
+				<img class="heroImage" src="https://x01.xyz/EFTG_brand.jpg"/>
                         </div>
                     </div>
                     <div className="row">
@@ -50,10 +47,7 @@ export default class WelcomePanel extends React.Component {
                             </div>
                         </div>
                         <div className="text-center welcomeImage medium-6 large-5 show-for-medium">
-                            <img
-                                className="heroImage"
-                                src={require('app/assets/images/welcome-hero.png')}
-                            />
+				<img class="heroImage" src="https://x01.xyz/EFTG_brand.jpg"/>
                         </div>
                     </div>
                 </div>
