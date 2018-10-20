@@ -61,7 +61,7 @@
         "payouts": "Gains",
         "permissions": "Permissions",
         "phishy_message":
-            "Link expanded to plain text; beware of a potential phishing attempt",
+            "Hyperlien transformé en texte. Attention à une possible tentative de phishing",
         "post": "Poster",
         "post_as": "Poster en tant que",
         "posts": "Articles",
@@ -98,7 +98,7 @@
         "settings": "Configuration",
         "share_this_post": "Partager cet article",
         "show": "Montrer",
-        "sign_in": "S'inscrire",
+        "sign_in": "Se connecter",
         "sign_up": "S'inscrire",
         "since": "depuis",
         "submit": "Soumettre",
@@ -244,10 +244,10 @@
         },
         "post_key_warning": {
             "confirm":
-                "You are about to publish a STEEM private key or master password. You will probably lose control of the associated account and all its funds.",
+                "Vous êtes sur le point de publier une clé privée EFTG ou un mot de passe principal. Vous allez vraisemblablement perdre le contrôle du compte associé et tous ses fonds.",
             "warning":
-                "Legitimate users, including employees of Steemit Inc., will never ask you for a private key or master password.",
-            "checkbox": "I understand"
+                "Aucun utilisateur, y compris les employés de la Commission, ne vous demanderont jamais votre clé privé ou votre mot de passe principal.",
+            "checkbox": "Je comprends"
         }
     },
     "navigation": {
@@ -267,16 +267,16 @@
         "learn_more": "En savoir plus",
         "welcome": "Bienvenue",
         "faq": "FAQ",
-        "shop": "The Steemit Shop",
-        "chat": "Salons de discussion Steemit",
-        "app_center": "Centre d'applications Steemit",
-        "api_docs": "Documentation API sur Steemit",
-        "whitepaper": "Livre blanc sur le Steem",
-        "bluepaper": "Steem Bluepaper",
+        "shop": "The EFTG Shop",
+        "chat": "Salons de discussion EFTG",
+        "app_center": "Centre d'applications EFTG",
+        "api_docs": "Documentation API sur EFTG",
+        "whitepaper": "Livre blanc sur EFTG",
+        "bluepaper": "EFTG Bluepaper",
         "smt_whitepaper": "Livre blanc sur le SMT",
-        "intro_tagline": "Présentations sur la monnaie",
+        "intro_tagline": "La Plateforme de la Transparence Financière Européenne",
         "intro_paragraph":
-            "Votre voix vaut quelque chose. Rejoignez la communauté qui vous rémunère pour vos articles et participez à la curation du contenu de qualité."
+            "L'interface utilisateur est en contruction."
     },
     "main_menu": {
         "hot": "chaud",
@@ -288,7 +288,7 @@
             "Dépassement de la taille maximale ( %(maxKb)s KB)",
         "including_the_category": "(incluant la catégorie '%(rootCategory)s')",
         "use_limited_amount_of_tags":
-            "Vous avez un total de %(tagsLength)s mots clés %(includingCategory)s. Veuillez en utiliser seulement 5, autant pour l'article que pour le champ dédié aux mots clés.",
+            "Vous avez un total de %(tagsLength)s mots clés %(includingCategory)s.",
         "are_you_sure_you_want_to_clear_this_form":
             "Etes-vous sûr de vouloir effacer ce formulaire ?",
         "uploading": "Téléchargement en cours",
@@ -572,7 +572,7 @@
         "converted_VESTING_TOKEN_can_be_sent_to_yourself_but_can_not_transfer_again":
             "Les %(VESTING_TOKEN)s convertis peuvent être envoyés soit à vous, soit à quelqu'un d'autre, mais ne peuvent pas être transférés à nouveau sans être convertis en %(LIQUID_TOKEN)s.",
         "part_of_your_steem_power_is_currently_delegated":
-            "Une partie de votre influence, ou STEEM POWER, est actuellement déléguée. La délégation est un don pour augmenter l'influence ou pour encourager les nouveaux utilisateurs à effectuer des actions sur Steemit. Le montant délégué peut varier."
+            "Une partie de votre influence, ou EFTG POWER, est actuellement déléguée. La délégation est un don pour augmenter l'influence ou pour encourager les nouveaux utilisateurs à effectuer des actions sur EFTG. Le montant délégué peut varier."
     },
     "promote_post_jsx": {
         "promote_post": "Promouvoir un article",
@@ -586,7 +586,7 @@
     "about_jsx": {
         "about_app": "A propos de %(APP_NAME)s",
         "about_app_details":
-            "%(APP_NAME)s est une plateforme de réseau social où les utilisateurs sont payés pour créer et effecter la curation du contenu. Elle influence un système de points digitaux, appelé Steem, qui ont une valeur réelle en fonction des prix du marché et des liquidités disponibles.",
+            "%(APP_NAME)s est une plateforme de réseau social où les utilisateurs sont payés pour créer et effecter la curation du contenu. Elle influence un système de points digitaux, appelé EFTG, qui ont une valeur réelle en fonction des prix du marché et des liquidités disponibles.",
         "learn_more_at_app_url": "Plus d'informations à %(APP_URL)s",
         "resources": "Ressources"
     },
@@ -682,7 +682,7 @@
         "password_update_succes":
             "Le mot de passe pour%(accountName)sa été mis à jour avec succès.",
         "password_info":
-            "Ce mot de passe ou clé privée est incorrect. Il y a probablement une erreur d'écriture ou d'entrée des données. Indication : un mot de passe ou une clé privée générée par Steemit ne contiendra jamais aucun 0 (zéro), O (o majuscule), I (i majuscule) ou l (l minuscule).",
+            "Ce mot de passe ou clé privée est incorrect. Il y a probablement une erreur d'écriture ou d'entrée des données. Indication : un mot de passe ou une clé privée générée par DIGIT ne contiendra jamais aucun 0 (zéro), O (o majuscule), I (i majuscule) ou l (l minuscule).",
         "enter_your_username": "Entrez votre nom d'utilisateur",
         "password_or_wif": "Mot de passe ou WIF",
         "this_operation_requires_your_key_or_master_password":
@@ -691,9 +691,9 @@
         "amazing_community": "communauté extraordinaire",
         "to_comment_and_reward_others":
             " pour commenter et récompenser les autres.",
-        "sign_up_get_steem": "Sign up. Get STEEM",
-        "signup_button": "Sign up now to earn ",
-        "signup_button_emphasis": "FREE STEEM!",
+        "sign_up_get_steem": "Enregistrez-vous",
+        "signup_button": "Enregistrez-vous maintenant",
+        "signup_button_emphasis": "FREE EFTG!",
         "returning_users": "Utilisateurs de retour: ",
         "join_our": "Rejoignez notre"
     },
@@ -779,7 +779,7 @@
             "Les transferts sont temporairement désactivés.",
         "history": "HISTORIQUE",
         "redeem_rewards": "Réclamer les gains (transférer vers le solde)",
-        "buy_steem_or_steem_power": "Acheter du STEEM ou du STEEM POWER"
+        "buy_steem_or_steem_power": "Acheter du EFTG ou du EFTG POWER"
     },
     "powerdown_jsx": {
         "power_down": "Diminuer son influence",
