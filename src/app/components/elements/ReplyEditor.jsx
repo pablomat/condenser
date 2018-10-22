@@ -272,7 +272,7 @@ class ReplyEditor extends React.Component {
         try {
             if (e.clipboardData) {
                 for (const item of e.clipboardData.items) {
-                    if (item.kind === 'file' && /^image\//.test(item.type)) {
+                    if (item.kind === 'file' && /^pdf\//.test(item.type)) {
                         const blob = item.getAsFile();
                         this.upload(blob);
                     }
@@ -496,7 +496,7 @@ class ReplyEditor extends React.Component {
                                         }
                                         disableClick
                                         multiple={false}
-                                        accept="image/*"
+                                        accept="application/pdf"
                                         ref={node => {
                                             this.dropzone = node;
                                         }}
