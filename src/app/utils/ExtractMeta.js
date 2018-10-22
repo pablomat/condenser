@@ -3,27 +3,27 @@ import { objAccessor } from 'app/utils/Accessors';
 import normalizeProfile from 'app/utils/NormalizeProfile';
 
 const site_desc =
-    'Steemit is a social media platform where everyone gets paid for creating and curating content. It leverages a robust digital points system (Steem) for digital rewards.';
+    'European Financial Transparency Gateway (EFTG) is a project which aims to leverage Distributed Ledger Technology (DLT) in order to improve transparency of financial regulated information across Europe.';
 
 function addSiteMeta(metas) {
-    metas.push({ title: 'Steemit' });
+    metas.push({ title: 'EFTG' });
     metas.push({ name: 'description', content: site_desc });
     metas.push({ property: 'og:type', content: 'website' });
-    metas.push({ property: 'og:site_name', content: 'Steemit' });
-    metas.push({ property: 'og:title', content: 'Steemit' });
+    metas.push({ property: 'og:site_name', content: 'EFTG' });
+    metas.push({ property: 'og:title', content: 'EFTG' });
     metas.push({ property: 'og:description', content: site_desc });
     metas.push({
         property: 'og:image',
-        content: 'https://steemit.com/images/steemit.png',
+        content: 'https://x01.xyz/EFTG_logo.png',
     });
     metas.push({ property: 'fb:app_id', content: $STM_Config.fb_app });
     metas.push({ name: 'twitter:card', content: 'summary' });
-    metas.push({ name: 'twitter:site', content: '@steemit' });
-    metas.push({ name: 'twitter:title', content: '#Steemit' });
+    metas.push({ name: 'twitter:site', content: '@eftg' });
+    metas.push({ name: 'twitter:title', content: '#EFTG' });
     metas.push({ name: 'twitter:description', site_desc });
     metas.push({
         name: 'twitter:image',
-        content: 'https://steemit.com/images/steemit.png',
+        content: 'https://x01.xyz/EFTG_logo.png',
     });
 }
 
@@ -55,10 +55,10 @@ export default function extractMeta(chain_data, rp) {
             metas.push({ name: 'og:url', content: url });
             metas.push({
                 name: 'og:image',
-                content: image || 'https://steemit.com/images/steemit.png',
+                content: image || 'https://x01.xyz/EFTG_logo.png',
             });
             metas.push({ name: 'og:description', content: desc });
-            metas.push({ name: 'og:site_name', content: 'Steemit' });
+            metas.push({ name: 'og:site_name', content: 'EFTG' });
             metas.push({ name: 'fb:app_id', content: $STM_Config.fb_app });
             metas.push({ name: 'article:tag', content: category });
             metas.push({
