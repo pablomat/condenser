@@ -296,7 +296,10 @@ class ReplyEditor extends React.Component {
             if (progress.url) {
                 this.setState({ progress: {} });
                 const { url } = progress;
-                const image_md = `![${name}](${url})`;
+                let image_md = `![${name}](${url})`;
+                if (/.(pdf)$/i.test(url)) {
+                    image_md = `[${name}](${url})`;
+                }
                 const { body } = this.state;
                 const { selectionStart, selectionEnd } = this.refs.postRef;
                 body.props.onChange(
