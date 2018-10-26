@@ -105,9 +105,15 @@ export default connect(
                         className={className}
                     />
                 );
-
-            const img = <img src={src} alt={alt} className={className} />;
-
+            let img = <img src={src} alt={alt} className={className} />;
+            console.log(src, src.match(/.(pdf)$/i));
+            if (src.match(/.(pdf)$/i)) {
+                img = (
+                    <a target="_blank" href={src} alt={alt}>
+                        Download {alt}
+                    </a>
+                );
+            }
             const { uploading } = this.state;
             if (uploading)
                 return (
