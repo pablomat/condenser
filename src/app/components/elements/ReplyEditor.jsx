@@ -272,7 +272,7 @@ class ReplyEditor extends React.Component {
         try {
             if (e.clipboardData) {
                 for (const item of e.clipboardData.items) {
-                    if (item.kind === 'file' && /^image\//.test(item.type)) {
+                    if (item.kind === 'file' && /^pdf|image\//.test(item.type)) {
                         const blob = item.getAsFile();
                         this.upload(blob);
                     }
@@ -296,7 +296,10 @@ class ReplyEditor extends React.Component {
             if (progress.url) {
                 this.setState({ progress: {} });
                 const { url } = progress;
-                const image_md = `![${name}](${url})`;
+                let image_md = `![${name}](${url})`;
+                if (/.(pdf)$/i.test(url)) {
+                    image_md = `[${name}](${url})`;
+                }
                 const { body } = this.state;
                 const { selectionStart, selectionEnd } = this.refs.postRef;
                 body.props.onChange(
@@ -496,7 +499,7 @@ class ReplyEditor extends React.Component {
                                         }
                                         disableClick
                                         multiple={false}
-                                        accept="image/*"
+                                        accept="application/pdf,image/*"
                                         ref={node => {
                                             this.dropzone = node;
                                         }}
