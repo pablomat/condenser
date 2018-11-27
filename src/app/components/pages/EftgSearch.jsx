@@ -16,6 +16,6 @@ class EftgSearchPost extends React.Component {
 }
 
 module.exports = {
-    path: 'eftg-search.html',
-    component: Support,
+    path: 'search.html',
+    component: EftgSearchPost,
 };

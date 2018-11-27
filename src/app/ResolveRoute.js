@@ -22,8 +22,8 @@ export default function resolveRoute(path) {
     if (path === '/welcome') {
         return { page: 'Welcome' };
     }
-    if (path === '/eftg-search.html') {
-      return { page: 'EftgSearchPost' };
+    if (path === '/search.html') {
+      return { page: 'EftgSearch' };
     }
     if (path === '/faq.html') {
         return { page: 'Faq' };
