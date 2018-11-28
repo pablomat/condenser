@@ -15,6 +15,10 @@ export default {
             //require.ensure([], (require) => {
             cb(null, [require('app/components/pages/About')]);
             //});
+        } else if (route.page === 'EftgSearch') {
+          //require.ensure([], (require) => {
+          cb(null, [require('app/components/pages/EftgSearch')]);
+          //});
         } else if (route.page === 'Welcome') {
             //require.ensure([], (require) => {
             cb(null, [require('app/components/pages/Welcome')]);

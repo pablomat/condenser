@@ -16,6 +16,9 @@ export default function resolveRoute(path) {
     if (path === '/') {
         return { page: 'PostsIndex', params: ['trending'] };
     }
+    if (path === '/search.html') {
+      return { page: 'EftgSearch' };
+    }
     if (path === '/about.html') {
         return { page: 'About' };
     }
