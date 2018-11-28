@@ -7,7 +7,6 @@ import resolveRoute from 'app/ResolveRoute';
 import tt from 'counterpart';
 import { APP_NAME } from 'app/client_config';
 import SortOrder from 'app/components/elements/SortOrder';
-import SearchInput from 'app/components/elements/SearchInput';
 import IconButton from 'app/components/elements/IconButton';
 import DropdownMenu from 'app/components/elements/DropdownMenu';
 import * as userActions from 'app/redux/UserReducer';
@@ -302,10 +301,6 @@ class Header extends React.Component {
                             </span>
                         )}
 
-                        {/*CUSTOM SEARCH*/}
-                        <span className="Header__search--desktop">
-                            <SearchInput />
-                        </span>
                         {/*SUBMIT SEARCH*/}
                         {submit_search}
                         {/*SUBMIT STORY*/}
