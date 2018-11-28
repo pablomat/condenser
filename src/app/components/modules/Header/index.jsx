@@ -203,6 +203,12 @@ class Header extends React.Component {
         // Since navigate isn't set, defaultNavigate will always be used.
         const nav = navigate || defaultNavigate;
 
+        const submit_search = $STM_Config.read_only_mode ? null : (
+          <Link to="/search.html">
+              <IconButton icon="magnifyingGlass"/>
+          </Link>
+        );
+
         const submit_story = $STM_Config.read_only_mode ? null : (
             <Link to="/submit.html">
                 <IconButton />
@@ -300,12 +306,8 @@ class Header extends React.Component {
                         <span className="Header__search--desktop">
                             <SearchInput />
                         </span>
-                        <span className="Header__search">
-                            <a href="/static/search.html">
-                                <IconButton icon="magnifyingGlass" />
-                            </a>
-                        </span>
-
+                        {/*SUBMIT SEARCH*/}
+                        {submit_search}
                         {/*SUBMIT STORY*/}
                         {submit_story}
                         {/*USER AVATAR */}
