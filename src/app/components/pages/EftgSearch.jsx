@@ -2,12 +2,12 @@ import React from 'react';
 import tt from 'counterpart';
 import { APP_NAME } from 'app/client_config';
 
-class EftgSearchPost extends React.Component {
+class EftgSearch extends React.Component {
     render() {
         return (
             <div className="row">
                 <div>
-                    <h2>{tt('g.eftg_search_post_title')}</h2>
+                    <h2>{tt('g.eftg_search_title')}</h2>
                     <p>Hello.</p>
                 </div>
             </div>
@@ -17,5 +17,5 @@ class EftgSearchPost extends React.Component {
 
 module.exports = {
     path: 'search.html',
-    component: EftgSearchPost,
+    component: EftgSearch,
 };
