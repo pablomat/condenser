@@ -1,25 +1,24 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
-import ReplyEditor from 'app/components/elements/ReplyEditor';
-import { SUBMIT_FORM_ID } from 'shared/constants';
+import EftgSearchForm from 'app/components/elements/EftgSearchForm';
+import { EFTG_SEARCH_FORM_ID } from 'shared/constants';
 
-const formId = SUBMIT_FORM_ID;
-const SubmitReplyEditor = ReplyEditor(formId);
+const formId = EFTG_SEARCH_FORM_ID;
+const EftgSearchFormObject = EftgSearchForm(formId);
 
 class EftgSearch extends React.Component {
     constructor() {
         super();
         this.success = () => {
             localStorage.removeItem('eftgSearchData-' + formId);
-            browserHistory.push('/searched');
+            browserHistory.push('/searched.html');
         };
     }
     render() {
         const { success } = this;
         return (
             <div className="SubmitPost">
-                <SubmitReplyEditor
-                    type="submit_story"
+                <EftgSearchFormObject
                     successCallback={success}
                 />
             </div>
